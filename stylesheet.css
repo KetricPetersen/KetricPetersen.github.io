@@ -1,0 +1,44 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(242, 244, 247);
+    
+}
+
+h1 {
+    color: #031f46;
+    font-size: 5em;
+    line-height: 90%;
+    text-transform:uppercase;
+}
+
+h2 {
+    color: #ffffff;
+    text-decoration:overline;
+    text-transform:uppercase;
+    background-image: url("images/blueBackground.jpg");
+}
+/*
+div#navHeader {
+
+    background-image: url("images/blueBackground.jpg");
+} 
+*/
+
+ul#mainNav {
+    list-style-type: none;
+    text-transform:uppercase;
+}
+
+ul#mainNav a {
+    text-decoration: none;
+}
+
+img {
+    width: 30%;
+}
+
+p { 
+    font-family: Arial;
+    text-align: left;
+}
+
