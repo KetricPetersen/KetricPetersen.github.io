@@ -1,7 +1,8 @@
 *{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Raleway','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant-numeric: lining-nums;
     background-color: rgb(242, 244, 247);
-    
+    height: auto;
 }
 
 h1 {
@@ -9,30 +10,29 @@ h1 {
     font-size: 5em;
     line-height: 90%;
     text-transform:uppercase;
+    font-weight: 800;
 }
 
 h2 {
     color: #ffffff;
     text-transform:uppercase;
     background-image: url("images/blueBackground.jpg");
+    background-repeat:no-repeat;
+    height: auto;
+    font-weight: 800;
 }
-/*
-div#navHeader {
-
-    background-image: url("images/blueBackground.jpg");
-} 
-*/
 
 ul#mainNav {
     list-style-type: none;
     text-transform:uppercase;
+    font-weight: 700;
 }
 
 ul#mainNav a {
     text-decoration: none;
 }
 
-img {
+img {  
     width: 30%;
 }
 
@@ -41,3 +41,14 @@ p {
     text-align: left;
 }
 
+a:link {
+    color:black;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: blue;
+}
