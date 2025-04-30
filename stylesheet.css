@@ -1,10 +1,21 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-variant-numeric: lining-nums;
     background-color: rgb(242, 244, 247);
     height: auto;
 }
 
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+header {
+    width: 100%;
+    margin: 5%;
+    padding-top: 0%;
+}
 h1 {
     color: #031f46;
     font-size: 5em;
