@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant-numeric: lining-nums;
+    background-color: rgb(242, 244, 247);
+    height: auto;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto; 
+}
+
+.column {
+    width: 33.33%;
+    float: left;
+    margin: 10%;
+}
+header {
+    width: 100%;
+    margin: 5%;
+    padding-top: 0%;
+}
+h1 {
+    color: #031f46;
+    font-size: 5em;
+    line-height: 90%;
+    text-transform:uppercase;
+    font-weight: 800;
+}
+
+h2 {
+    color: #ffffff;
+    text-transform:uppercase;
+    background-image: url("Images/blueBackground.jpg");
+    background-repeat:no-repeat;
+    height: auto;
+    font-weight: 800;
+    z-index: -1;
+}
+
+
+
+ul#mainNav {
+    list-style-type: none;
+    text-transform:uppercase;
+    font-weight: 700;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 0%;
+    z-index: 10;
+}
+.columns {float:left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.clear-left {
+    clear: left;
+}
+.textpad {
+    padding-right: 2em;
+}
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ul#mainNav a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+p { 
+    font-family: Arial;
+    text-align: left;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer {
+
+    width: 100%;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 480px) {
+    .col-6 {
+        width: 100%;
+        float: left;
+        margin: 0%;
+    }
+} /* smaller than mobile */
+@media only screen and (max-width: 979px) {
+
+} /* smaller than tablet */
+@media only screen and (max-width: 1200px) {
+
+} /* smaller than desk */
