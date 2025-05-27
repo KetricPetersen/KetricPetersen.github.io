@@ -31,7 +31,11 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #e05307;
-  border-color: #e05307; }
+  border-color: #e05307; 
+  transform: scale(1.1);
+  transition-duration: .5s;
+
+}
 
 .subhead {
     background-image: url("Images/blueBackground.jpg");
@@ -53,4 +57,23 @@ h4 {
 
 h1 {
   padding-top: 3%; 
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+img {
+  animation-duration: 2s;
+  animation-name: bounceIn;
 }
