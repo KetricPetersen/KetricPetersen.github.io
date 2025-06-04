@@ -1,0 +1,64 @@
+* {
+    background-color: #082DA2;
+}
+/* 
+.checkers {
+    width: 100%;
+    float: left;
+}
+
+.squareYellow{
+    width: 64px;
+    height: 64px;
+    background: #e5b323;
+}
+.squareRed{
+    width: 64px;
+    height: 64px;
+    background: #9e1e2c;
+}
+
+.checker {
+    width: 240px;
+    height: 240px;
+    background-color: #9e1e2c;
+    background-image: linear-gradient(
+        90deg,
+        #000 25%,
+        transparent 25%,
+        transparent 75%,
+        #000 75%,
+        #000
+    ),
+    linear-gradient(
+        -90deg,
+        #000 25%,
+        transparent 25%,
+        #000 75%,
+        #000
+    );
+  background-size: 60px 60px;
+  background-repeat: repeat;
+    
+} */
+
+.box-row {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .box {
+    flex: 1 1 100px; /* Grows/shrinks with a base width of 100px */
+    height: 100px;
+    max-width: 150px;
+  }
+
+  .box:nth-child(odd) {
+    background-color: #3498db; /* Blue */
+  }
+
+  .box:nth-child(even) {
+    background-color: #e74c3c; /* Red */
+  }
