@@ -1,64 +1,213 @@
-* {
-    background-color: #082DA2;
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-/* 
-.checkers {
+
+
+
+.checkered-divider01 {
+  height: 100px;
+  width: 100%;
+  background-image: url('images/checkeredDivider01.png');
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.checkered-divider02 {
+  height: 200px;
+
+  background-image: url('images/checkeredDivider02.png');
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.character-section {
+  width: 100%;
+  background-color: #F2F5EC;
+  padding: 200px 0;
+}
+
+.container {
+  max-width: 100%;
+  background-color: #F2F5EC;
+}
+
+.row .character-image{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 30%;
+}
+
+.default-image, .hover-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  margin-left: 40%;
+}
+
+
+.character-name {
+  font-size: 40px;
+  color: #a71f2f;
+  font-weight: bold;
+  margin-top: 0;
+  background-color: #F2F5EC;
+}
+
+.character-description {
+  color: #082DA2;
+  font-size: 19px;
+  line-height: 1.5;
+  background-color: #F2F5EC;
+  padding-right: 15%;
+  max-width: 390px;
+}
+.image-col, .text-col {
+  display: flex;
+  background-color: #F2F5EC;
+}
+.text-col {
+  flex-direction: column;
+  background-color: #F2F5EC;
+}
+.image-col {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+@media (max-width: 904px) {
+  .character-section {
+    padding: 60px 0;
+  }
+
+  .character-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-col, .text-col {
     width: 100%;
-    float: left;
-}
-
-.squareYellow{
-    width: 64px;
-    height: 64px;
-    background: #e5b323;
-}
-.squareRed{
-    width: 64px;
-    height: 64px;
-    background: #9e1e2c;
-}
-
-.checker {
-    width: 240px;
-    height: 240px;
-    background-color: #9e1e2c;
-    background-image: linear-gradient(
-        90deg,
-        #000 25%,
-        transparent 25%,
-        transparent 75%,
-        #000 75%,
-        #000
-    ),
-    linear-gradient(
-        -90deg,
-        #000 25%,
-        transparent 25%,
-        #000 75%,
-        #000
-    );
-  background-size: 60px 60px;
-  background-repeat: repeat;
-    
-} */
-
-.box-row {
     display: flex;
-    flex-wrap: wrap; /* Makes it responsive */
-    gap: 10px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
 
-  .box {
-    flex: 1 1 100px; /* Grows/shrinks with a base width of 100px */
-    height: 100px;
-    max-width: 150px;
+  .character-image {
+    max-width: 40%;
+    min-width: 270px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .character-name{
+    margin-bottom: 0;
+  }
+  .character-description {
+    margin: 0;
+    padding: 2%;
   }
 
-  .box:nth-child(odd) {
-    background-color: #3498db; /* Blue */
+  .text-col h2, .text-col p {
+    text-align: center;
   }
+  .row .character-image{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 0;
+}
 
-  .box:nth-child(even) {
-    background-color: #e74c3c; /* Red */
+}
+.image-hover-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #F2F5EC;
+}
+
+.default-image, .hover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.image-hover-wrapper:hover .hover-image {
+  opacity: 1;
+}
+
+.image-hover-wrapper:hover .default-image {
+  opacity: 1;
+}
+
+.container .home{
+  background-color: #082DA2;
+}
+
+.image-header{
+      display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    margin: 0;
+  background-color: #082DA2;
+}
+.header {
+  width: 60%;
+  background-color: #082DA2;
+}
+
+.checkered-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -300px;
+  height: 80px; 
+  animation: Left 6s linear infinite;
+}
+
+@keyframes Left {
+  0% {
+    right: -300px;
   }
+  100% {
+    right: 100%;
+  }
+}
